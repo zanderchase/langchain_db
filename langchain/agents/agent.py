@@ -185,8 +185,10 @@ class AgentExecutor(Chain, BaseModel):
         intermediate_steps: List[Tuple[AgentAction, str]] = []
         # We now enter the agent loop (until it returns something).
         while True:
+            print("HERE")
             # Call the LLM to see what to do.
             output = self.agent.plan(intermediate_steps, **inputs)
+            print(output)
             # If the tool chosen is the finishing tool, then we end and return.
             if isinstance(output, AgentFinish):
                 if self.verbose:

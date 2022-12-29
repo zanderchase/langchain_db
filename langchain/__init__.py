@@ -1,4 +1,7 @@
 """Main entrypoint into package."""
+import sys
+sys.path.append('/Users/zanderchase/Desktop/python/langchain_db/')
+
 
 from typing import Optional
 

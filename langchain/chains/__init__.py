@@ -13,6 +13,7 @@ from langchain.chains.qa_with_sources.base import QAWithSourcesChain
 from langchain.chains.qa_with_sources.vector_db import VectorDBQAWithSourcesChain
 from langchain.chains.sequential import SequentialChain, SimpleSequentialChain
 from langchain.chains.sql_database.base import SQLDatabaseChain
+from langchain.chains.sql_database.base2 import SQLDatabaseChain2
 from langchain.chains.transform import TransformChain
 from langchain.chains.vector_db_qa.base import VectorDBQA
 
@@ -26,6 +27,7 @@ __all__ = [
     "PALChain",
     "QAWithSourcesChain",
     "SQLDatabaseChain",
+    "SQLDatabaseChain2",
     "SequentialChain",
     "SimpleSequentialChain",
     "VectorDBQA",
